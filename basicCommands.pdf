@@ -1,0 +1,112 @@
+
+
+	Basic Terminal Commands
+
+
+
+	ls				list contents
+			
+	ls -l	 			list contents long version
+		
+	ls -a 				list all contents including hidden files
+
+	cd				change directory
+	
+	cd .. 				change directory one step back
+
+	pwd				print working directory
+	
+	mkdir				make new directory
+
+	rm [fileName]  			remove file
+	
+	rm -r [folderName]	 	remove file and contents recursively
+
+	touch [fileName]		make a new file or add a new timestamp
+
+	mv [oldName] [newName]		renaming a file if in the same file, otherwise moves the file to another file
+
+	vim [fileName]			open vim text editor
+
+	g++ [fileName]			compiles your file into the default executable a.out
+	
+	g++ [fileName] -o [exeName]	compiles your file into the an executable file, but you choose the name
+
+	cat [fileName] 			print the contents of the file into the terminal
+
+		| 			pipe, take the left output and places it as input on what is in the right
+	
+	grep "pattern" [fileName]	searches for the lines that contain the pattern you are looking for. 
+					the entire line is printed.
+
+	
+	
+
+
+
+	
+	To change the permissions use the following legend:     
+	
+	u:user g:group o:other(World)     	r:read w:write x:execute	
+
+	chmod action [fileName]		Ex:  	chmod u+rwx g+r o+rw soccerFile
+
+	chmod action [fileName]		Ex:  	chmod g+r soccerFile
+
+	chmod action [fileName]		Ex:  	chmod o+rw soccerFile
+
+	Use the minus sign to remove permissions
+	
+	Use chmod 777 [fileName] is you want to give complete access to everyone.
+
+	
+	
+
+ 	
+
+
+
+
+	hexdump [fileName]		dump in hexadecimals  (Take every 4 set,Split into two, and reverse the order before conversion)
+
+	hexdump [fileName] -c		dump in ASCII, character symbols
+
+	hexdump [fileName] -d		dump in decimals
+
+	hexdump -C -n 16 [fileName]	dump in hexadecimals and ASCII	
+
+
+
+
+	
+	Converting decimal to hexdecimal
+	
+	Simply divide by 16 until we reach zero and then take all the remainders from bottom to top
+
+	ex: 230
+
+	230/16 = 14 remainder 6
+	
+	Bring down the divider
+	
+	14/16 = 0 remainder 14				Hexdecimal = 14 6 = E6
+
+
+
+
+	Converting hexdecimal to decimal
+
+	Take the numbers and separate each character, each character should be multiplied by 16^n, n is the position of the character
+
+	ex: B4
+	
+	B and 4
+	
+	B is in the first position:   B = 11 * 16^1 = 176   
+	4 is in the zeroth positionL  4 = 4  * 16^0 = 4
+
+	Add then together:   176 + 4 = 180     =>    Decimal = 180
+	
+
+
+

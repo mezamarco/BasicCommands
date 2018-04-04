@@ -1,0 +1,46 @@
+
+
+	
+
+
+
+
+
+	Git Repository is vesrion control tool
+
+	Version control is a concept which applies to the management of source code
+
+	
+
+
+
+
+	Github Diagram
+
+	
+		  fork										     New Pull Request
+	MainRepo   ->   YourGithubAccount  -> clone/download to PC               YourGithubAccount         ---->        MainRepo
+
+							|			       |
+										       						
+						  modify -> git add -> git commit -> git push
+	
+	
+
+	
+
+	Transfering from Github to PC
+
+	1. Copy the clone/download link to the repo that appears in Github
+	2. Now, in the terminal you must clone the repo:       git clone [URL]
+
+	
+	After Modifying, we know must place the new version back into the Github account
+
+	3. Add the modified files:     	 	git add [fileName]  or simply add all the files by:     git add  --all
+	4. Commit to the changes:       	git commit -m 'nameOfCommit'
+	5. Push the changes to your Github	git push
+
+	The newest version is now in your Github account
+
+	6. Request a NPR, New Pull Request, and you are all done.
